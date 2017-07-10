@@ -1,0 +1,36 @@
+<div class="header__nav header__nav__json">
+  <div class="view__btn" (click)="show__save()">view save json</div>
+  <div class="view__btn" (click)="show__current()">view current json</div>
+</div>
+<div class="header__nav">
+  <div class="header__nav__btn" (click)="reset__grid()">Reset</div>
+  <div class="header__nav__btn" (click)="save__grid()">Save</div>
+  <div class="header__nav__btn" (click)="open__grid()">Load</div>
+</div>
+
+<div class="edit__container">
+  <p class="edit__title">Pallete</p>
+  <ul class="edit__list">
+    <li class="edit__item" *ngFor="let item of edit__arr" [attr.data-index]="item.index" (mousedown)="pick__color(item.index)">
+      <div class="edit__item__color" [style.background-color]="'rgb('+item.color__rgb+')'"></div>
+      <div class="edit__item__name">{{item.color__name}}</div>
+    </li>
+  </ul>
+</div>
+<div class="work__conainer">
+  <p class="grid__list__title">Grid</p>
+  <div class="grid__container">
+    <div class="grid__item" *ngFor="let item of grid__arr" [style.background-color]="item.color__rgb != false ? 'rgb('+item.color__rgb+')' : '#fff' " (mouseup)="set__color(item.index)">
+    </div>
+  </div>
+</div>
+
+<div id="json__view">
+  <div class="json__view__close" (click)="close__json__view()">
+    +
+  </div>
+  <div class="json__content">
+    {{json__view}}
+  </div>
+</div>
+

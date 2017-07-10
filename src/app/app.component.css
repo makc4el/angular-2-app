@@ -1,0 +1,155 @@
+/*edit style*/
+*{
+		-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.edit__list{
+	list-style: none;
+    width: 50rem;
+    padding-left: 0.5rem;
+}
+.edit__item{
+	display: inline-block;
+	width: 100%;
+	font-weight: 600;
+	font-family: sans-serif;
+	cursor: pointer;
+
+}
+.edit__title{
+    font-weight: 600;
+    font-family: sans-serif;
+    margin: 0;
+    margin-top: 0.7rem;
+    font-size: 1.15rem;
+}
+.edit__container{
+	display: block;
+    float: left;
+    width: 19rem;
+    margin-top: 3rem;
+    padding-left: 3.7rem;
+    box-sizing: border-box;
+}
+.edit__item__name{
+	margin-top: 0.8rem;
+    font-size: 1.2rem;
+    margin-left: 2.8rem;
+}
+.edit__item__color{
+	float: left;
+}
+.edit__item__color{
+    width: 2.4rem;
+    height: 2.4rem;
+    display: inline-block;
+    float: left;
+}
+/*grid style*/
+
+.grid__container{
+	width: 24rem;
+	height: 24rem;
+	display: inline-block;
+}
+.grid__item{
+	width: 2.4rem;
+	height: 2.4rem;
+	box-sizing: border-box;
+	display: inline-block;
+	border:1px solid #000;
+	float: left;
+}
+
+.work__conainer{
+	display: inline-block;
+}
+.grid__list__title{
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+/*nav style*/
+.header__nav__btn{
+    font-weight: 600;
+    font-family: sans-serif;
+    border: 1px solid #000;
+    display: inline-block;
+    border-radius: 0.9rem;
+    padding: 0.6rem 1.25rem 0.4rem 1.14rem;
+    font-size: 1.2rem;
+    letter-spacing: -0.05rem;
+    margin-right: 2rem;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+.header__nav__btn:hover{
+	background:#000;
+	color: #fff;
+}
+.header__nav{
+ margin-top: 3.24rem;
+ margin-bottom: 2rem;
+    display: block;
+        margin-left: 3.45rem;
+}
+#file__dialog{
+	display: none;
+}
+
+
+#json__view{
+    position: fixed;
+    width: 30rem;
+    height: 30rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
+    padding-top: 3rem;
+    top: 50%;
+    left: 50%;
+    margin-left: -15rem;
+    margin-top: -15rem;
+    background: #fff;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+    display: none;
+    overflow: hidden;
+}
+.json__content{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+.header__nav__json{
+    display: block;
+}
+.view__btn{
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    font-weight: 600;
+    margin-right: 5rem;
+    font-family: sans-serif;
+
+}
+.view__btn:hover{
+    text-decoration: underline;
+}
+
+.json__view__close{
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: 0rem;
+    right: 0.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+    transform: rotate(45deg); 
+}
